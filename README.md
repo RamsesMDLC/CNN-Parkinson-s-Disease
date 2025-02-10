@@ -19,7 +19,17 @@ Understanding of Parkinson's Disease through Explainable Artificial Intelligence
 * Columns of the dataset 
   * Independent features: 20 columns, where 17 correspond to biomedical voice measurement and 3 correspond to demographic information. They are the following: Subject, Age, Sex, test_time, Jitter (%), Jitter (Abs), Jitter: RAP, Jitter: PPQ5, Jitter: DDP, Shimmer, Shimmer(dB), Shimmer: APQ3, Shimmer: APQ5, Shimmer: APQ11, Shimmer: DDA, NHR, HNR, RPDE, DFA, and PPE
   * Dependent feature: 1 column (motor_UPDRS)
- 
+
+ ## Description
+* This project applies several machine learning algorithms to predict car prices.
+  * Models implemented: linear regression, polynomial regression, random forest, boosted trees, and ensemble. 
+* In this project, the respective pipelines were developed and implemented to execute data processing, feature engineering, model application, model evaluation, and model comparison.
+* SHAP (SHapley Additive exPlanations) and Partial Dependence Plots (PDPs) were used for model interpretability.
+
+## Key Insights
+* Random forest and boosted trees outperformed linear regression and polynomial regression, which is reasonable considering the distinct pricing patterns in the dataset.
+* The results of this project demonstrate the relevance of using different machine learning models for the prediction of car prices (i.e., for specific price ranges, there are specific models with better performance). In other words, a single machine learning model is not able to predict with high accuracy the price of all the cars that are in the dataset.
+* Feature engineering is extremely important to improve the performance of the models.
 
 In the context of a regression task applied to biomedical speech measurements of 
 subjects with early-stage Parkinson's Disease, the performance of the model and the 
