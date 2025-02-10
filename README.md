@@ -5,14 +5,20 @@ Understanding of Parkinson's Disease through Explainable Artificial Intelligence
 
 ## Dataset
 * Tabular data. MS Excel file (csv format).
-* 402005 rows of data (i.e., 402005 cars).
+* 5875 rows of data (i.e., 5875 voice recordings).
 * The dataset contains biomedical voice measurements from subjects with early-stage  Parkinson's  disease  recruited  to  a  six-month  trial of a telemonitoring device for remote symptom progression of Parkinson's disease  (Kancharla  Naveen  Kumar,  2023;  UCI  Machine  Learning Repository, no date).
 * Source of the dataset:
-  * Kaggle - Parkinson's Disease Detection Dataset: https://www.kaggle.com/datasets/naveenkumar20bps1137/parkinsons-disease-detection/data?select=parkinsons.data
+  * Kaggle - Parkinson's Disease Detection Dataset:
+    * https://www.kaggle.com/datasets/naveenkumar20bps1137/parkinsons-disease-detection/data?select=parkinsons.data
     * License: Creative Commons Attribution 4.0 International (CC BY 4.0).
   * UC Irvine Machine Learning Repository 
     * https://archive.ics.uci.edu/dataset/174/parkinsons
-    * License: Creative Commons Attribution 4.0 International (CC BY 4.0). 
+    * License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+* The subjects of this dataset were diagnosed with Parkinson's disease if they  had  at  least  two  of  the  following  symptoms:  rest  tremor, bradykinesia or rigidity. The diagnosed was within the previous five years at trial onset.
+* The dataset used in this project is not considered unbalanced because the 2:1 ratio displayed in this dataset (i.e., two males for every female) reflects  the  distribution  in  the  general  population  for  Parkinson’s disease.
+* Columns of the dataset 
+  * Independent features: 20 columns, where 17 correspond to biomedical voice measurement and 3 correspond to demographic information. They are the following: Subject, Age, Sex, test_time, Jitter (%), Jitter (Abs), Jitter: RAP, Jitter: PPQ5, Jitter: DDP, Shimmer, Shimmer(dB), Shimmer: APQ3, Shimmer: APQ5, Shimmer: APQ11, Shimmer: DDA, NHR, HNR, RPDE, DFA, and PPE
+  * Dependent feature: 1 column (motor_UPDRS)
  
 
 In the context of a regression task applied to biomedical speech measurements of 
